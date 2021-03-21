@@ -17,11 +17,6 @@ public class PlayerMove : MonoBehaviour
         float h = Input.GetAxis("Horizontal");
         float v = Input.GetAxis("Vertical");
 
-        sbytedsd
-
-            sd
-
-
         Vector3 dir = Vector3.right * h + Vector3.up * v;
         transform.Translate(dir * speed * Time.deltaTime);
     }

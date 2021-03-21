@@ -17,7 +17,7 @@ public class PlayerMove : MonoBehaviour
         float h = Input.GetAxis("Horizontal");
         float v = Input.GetAxis("Vertical");
 
-        Vector3 dir = Vector3.right * h + Vector3.up * v;
-        transform.Translate(dir * speed * Time.deltaTime);
+        Vector3 dir = new Vector3(h, v, 0);
+        transform.position += dir * speed * Time.deltaTime;
     }
 }

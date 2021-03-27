@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
 {
-    public float speed = 5f;
-
+    public float speed = 1f;
+    public GameObject explosionPrefab; 
     Vector3 dir;
 
     void Start()
@@ -32,6 +33,15 @@ public class Enemy : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
+        GameObject smObject = GameObject.Find("ScoreManager");
+        ScoreManager sm = smObject.GetComponent<ScoreManager>();
+        // 현재점수++
+        sm.SetScore(sm.GetScore() + 1);
+
+        GameObject explosion = Instantiate(explosionPrefab);
+
+        explosion.transform.position += transform.position; 
+
         Destroy(other.gameObject);
         Destroy(gameObject);
     } 

@@ -14,7 +14,8 @@ public class PlayerFire : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetButtonDown("Fire1")) {
+        if (Input.GetButtonDown("Fire1")) 
+        {
             GameObject bullet = Instantiate(bulletPrefab);
             bullet.transform.position = firePosition.transform.position;
         }

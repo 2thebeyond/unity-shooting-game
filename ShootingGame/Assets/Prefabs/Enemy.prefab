@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6888384244700535920}
   - component: {fileID: 4613916410270954122}
   - component: {fileID: 1101010305086277241}
+  - component: {fileID: 3009088297546645621}
   m_Layer: 11
   m_Name: Enemy
   m_TagString: Untagged
@@ -78,6 +79,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   explosionPrefab: {fileID: 1892078723244562, guid: 46876a2780737ec45a19d62f88e5ce56, type: 3}
+--- !u!114 &3009088297546645621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6888384244700535935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00b5d425c8e02454bb6fef4e88956cc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 7849328437002128640, guid: 96c045f2710ea074084e082b99a45aef, type: 3}
+  enemyFirePosition: {fileID: 8663685933188547764}
+  randTime: 0
+  fireTime: 0
 --- !u!1 &8663685933188547764
 GameObject:
   m_ObjectHideFlags: 0
@@ -102,7 +119,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8663685933188547764}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6888384244700535923}
@@ -125,15 +142,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f59be258fa0c1bc409e8a82f577dea4b, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.2
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f59be258fa0c1bc409e8a82f577dea4b, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.2
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f59be258fa0c1bc409e8a82f577dea4b, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.2
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f59be258fa0c1bc409e8a82f577dea4b, type: 3}
       propertyPath: m_LocalPosition.x

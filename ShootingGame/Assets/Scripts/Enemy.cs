@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
 {
-    public float speed = 1f;
+    public float speed = 0.5f;
     public GameObject explosionPrefab; 
     Vector3 dir;
 

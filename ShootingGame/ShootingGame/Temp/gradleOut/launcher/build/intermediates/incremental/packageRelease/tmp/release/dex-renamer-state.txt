@@ -1,4 +1,0 @@
-#Fri Apr 02 22:33:19 KST 2021
-base.0=C\:\\Users\\LG\\Documents\\GitHub\\unity-shooting-game\\ShootingGame\\Temp\\gradleOut\\launcher\\build\\intermediates\\dex\\release\\out\\classes.dex
-path.0=classes.dex
-renamed.0=classes.dex
